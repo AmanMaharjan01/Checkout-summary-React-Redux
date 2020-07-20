@@ -1,0 +1,98 @@
+$textColor: rgb(117, 117, 117);
+$defaultSize: 16px;
+
+.checkout {
+  width: 400px;
+  box-shadow: 5px 5px 15px 10px rgb(207, 207, 207);
+  position: fixed;
+  margin-left: 550px;
+  margin-top: 2px;
+}
+
+#total {
+  color: $textColor;
+  font-size: $defaultSize;
+  padding: 20px 0px 20px 40px;
+}
+
+#saving {
+  @extend #total;
+
+  #picking-price {
+    color: rgb(202, 60, 60);
+  }
+}
+
+#taxes {
+  @extend #total;
+}
+
+#see-more {
+  @extend #total;
+
+  #btn-text {
+    color: #4c4ad3;
+    font-size: 14px;
+    background-color: unset;
+    border: none;
+    text-decoration: none;
+    outline: none;
+  }
+
+  #title {
+    font-size: 16px;
+    font-weight: 700px;
+  }
+
+  #detail {
+    font-size: 13px;
+  }
+
+  #detail {
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+#estimated {
+  @extend #total;
+  div {
+    font-size: 30px;
+    font-weight: 600;
+  }
+}
+
+#Coupon {
+  @extend #see-more;
+  padding: 0px 0px 0px 40px;
+
+  .coupon {
+    width: 350px;
+    background-color: rgba(226, 226, 226, 0.4);
+    margin-bottom: 20px;
+  }
+
+  #code {
+    padding: 10px 0px 0px 25px;
+    margin: 0;
+  }
+  input {
+    margin: 20px;
+    width: 90%;
+    height: 40px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  #apply {
+    margin: 0px 0px 10px 20px;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(57, 136, 57, 0.6);
+    color: white;
+  }
+}
